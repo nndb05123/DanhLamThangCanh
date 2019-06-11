@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".View.PostBaiActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_alignParentRight="true"
+            android:id="@+id/btnDangBai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="Đăng bài"
+            android:textAllCaps="false" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/txtTieuDeBaiDang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Tiêu đề"
+        />
+    <EditText
+        android:text="Giới thiệu..."
+        android:id="@+id/txtNoiDungPostBai"
+        android:layout_width="match_parent"
+        android:layout_height="166dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine" />
+
+    <EditText
+        android:id="@+id/txtDiaChiNewPost"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Địa chỉ" />
+
+
+
+
+    <TextView
+        android:id="@+id/txtKinhDo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kinh Do"
+ />
+
+    <TextView
+        android:id="@+id/txtViDo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vi Do"
+ />
+
+    <Button
+        android:text="Lấy tọa độ"
+        android:textAllCaps="false"
+        android:id="@+id/btnGetToaDo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    />
+    <Button
+        android:id="@+id/btnChoosePic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chọn ảnh"
+        tools:layout_editor_absoluteX="68dp"
+        tools:layout_editor_absoluteY="593dp" />
+
+</LinearLayout>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Viết bình luận"
+            android:textColor="@color/colorAccent"/>
+        
+        <TextView
+            android:id="@+id/txtDangBinhLuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="5dp"
+            android:text="@string/dang"
+            android:textColor="@color/colorAccent"
+            android:padding="5dp"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBackgroundTrangChu"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/txtTenDL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên Danh Lam"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtDiaChiDanhLam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Địa Chỉ Danh Lam" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edTieuDeBinhLuan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tiêu đề (Không bắt buộc)"
+        android:textSize="12sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorBackgroundTrangChu"/>
+    
+    <EditText
+        android:id="@+id/edNoiDungBinhLuan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="Viết trên 100 từ để được gì đó..."
+        android:gravity="top"
+        android:textSize="12sp"
+        android:layout_weight="1"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:scaleType="fitXY"
+            android:id="@+id/star1"
+            android:background="@drawable/star_min"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+        <ImageButton
+            android:scaleType="fitXY"
+            android:id="@+id/star2"
+            android:background="@drawable/star_min"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+        <ImageButton
+            android:scaleType="fitXY"
+            android:id="@+id/star3"
+            android:background="@drawable/star_min"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+        <ImageButton
+            android:scaleType="fitXY"
+            android:id="@+id/star4"
+            android:background="@drawable/star_min"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+        <ImageButton
+            android:scaleType="fitXY"
+            android:id="@+id/star5"
+            android:background="@drawable/star_min"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorBackgroundTrangChu">
+
+        <!--BÀI 63: button bên layout_main_chitietquanan
+        cần khai báo bên ChiTietQuanAnActivity
+        gọi intent chuyển sang trang BinhLuanActivity
+        <Button
+            android:id="@+id/btnBinhLuan"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="BL"/>
+        button bên layout_main_chitietquanan, -->
+
+        <ImageButton
+            android:id="@+id/btnChonHinh"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_photo_camera_black_24dp"
+            android:background="@color/colorBackgroundTrangChu"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/baseline_label_black_18dp"
+            android:background="@color/colorBackgroundTrangChu"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/baseline_stars_black_18dp"
+            android:background="@color/colorBackgroundTrangChu"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+</LinearLayout>
